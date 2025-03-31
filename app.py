@@ -34,7 +34,7 @@ def answer_question(text, question):
     return response.choices[0].message.content
 
 # Streamlit UI
-st.title("🌍 AI-Powered Web Scraper with Groq API")
+st.title("🌍 AI-Powered Web Scraper")
 
 # User input for URL
 url = st.text_input("Enter a website URL", "")
@@ -63,3 +63,7 @@ if st.button("Get Answer") and user_question:
         st.write("🧠 AI Answer:", answer)
     else:
         st.warning("Please enter a valid URL first!")
+
+# Footer
+st.markdown("---")
+st.markdown("🚀 Developed by Sakshi Ambavade")
